@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <header id="header-section">
+      <img src="assets/logo.svg" alt="Logo do TodoList" />
+      <form id="task-form">
+        <input type="text" placeholder="Adicione uma nova tarefa" required />
+        <button type="submit" id="submit-btn">
+          Criar <img src="assets/Vector.svg" alt="Ícone de adicionar" />
+        </button>
+        <button type="submit" id="submit-btn-mobile">
+          <img src="assets/Vector.svg" alt="Ícone de adicionar" />
+        </button>
+      </form>
+    </header>
+    <section class="task-container" id="task-list">
+      <header id="task-header">
+        <div id="created-tasks">
+          <span class="text-subtitle">Tarefas criadas</span>
+          <div id="task-circle">
+            <span id="created-tasks-quantity">0</span>
+          </div>
+        </div>
+        <div id="completed-tasks">
+          <span class="text-subtitle">Concluídas</span>
+          <div id="completed-circle">
+            <span id="completed-tasks-quantity">0</span>
+          </div>
+        </div>
+      </header>
+      <ul id="task-list-container">
+        <li class="no-tasks-item" id="no-tasks">
+          <img src="assets/Vector(1).svg" alt="Icone de tarefas" />
+          <div>
+            <span class="text-subtitle"
+              >Você ainda não tem tarefas cadastradas</span
+            >
+            <span class="text-md"
+              >Crie tarefas e organize seus itens a fazer</span
+            >
+          </div>
+        </li>
+      </ul>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
